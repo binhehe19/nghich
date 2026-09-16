@@ -1,7 +1,7 @@
 const canvas=document.querySelector('#flowers'),ctx=canvas.getContext('2d');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-let width=0,height=0,wind=!reduced,palette='pink',night=false,time=0,last=0,bloomStart=-10000;
-const colors={pink:['#f8c5ce','#e89aae','#c26587','#8f3d64'],peach:['#ffe1bd','#f5b293','#d77b73','#ae5267'],purple:['#e4d5f4','#c6aedc','#947cb7','#65527e']};
+let width=0,height=0,wind=!reduced,palette='red',night=false,time=0,last=0,bloomStart=-10000;
+const colors={red:['#f46b68','#dc343f','#ac162e','#650d22'],peach:['#ffe1bd','#f5b293','#d77b73','#ae5267'],purple:['#e4d5f4','#c6aedc','#947cb7','#65527e']};
 const stems=[{x:.34,y:.43,s:.75,r:-.22},{x:.66,y:.40,s:.80,r:.25},{x:.44,y:.31,s:1.03,r:-.12},{x:.57,y:.24,s:.96,r:.13},{x:.27,y:.54,s:.80,r:-.35},{x:.70,y:.57,s:.88,r:.33},{x:.52,y:.47,s:1.1,r:.04},{x:.40,y:.60,s:.88,r:-.19},{x:.62,y:.64,s:.83,r:.19}];
 const particles=Array.from({length:28},()=>({x:Math.random(),y:Math.random(),r:Math.random()*1.5+.5,s:Math.random()*.3+.15,a:Math.random()*6}));
 const sparks=[];
