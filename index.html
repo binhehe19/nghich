@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f5eee8">
-  <title>Rosie — Một vườn hồng mộng mơ</title>
-  <link rel="stylesheet" href="style.css?v=worlds-2">
+  <title>Rosie — Một vườn tulip mộng mơ</title>
+  <link rel="stylesheet" href="style.css?v=tulips-1">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -14,17 +14,13 @@
     <span class="header-note">MỘT KHOẢNG TRỜI RIÊNG CỦA BẠN</span>
     <button class="mode" id="mode" aria-label="Chuyển sang chế độ mộng đêm"><span id="mode-icon">☼</span><span id="mode-label">Ban mai</span><span class="toggle"><i></i></span></button>
   </header>
-  <nav class="screen-switch" aria-label="Chọn không gian">
-    <button type="button" id="show-garden" aria-controls="garden-screen" aria-pressed="true">01 <span>Vườn hoa</span> ✳</button>
-    <button type="button" id="show-void" aria-controls="void-screen" aria-pressed="false">02 <span>Vô hạn</span> ∞</button>
-  </nav>
   <main>
     <div id="garden-screen">
     <section class="hero" aria-labelledby="title">
       <div class="copy">
         <div class="eyebrow"><span></span> MỘT KHU VƯỜN KHÔNG VỘI VÃ</div>
         <h1 id="title">Có một nơi,<br>chỉ có <em>hoa</em><br>và <em>bạn.</em><span class="title-star" aria-hidden="true">✧</span></h1>
-        <p>Để những bộn bề ở lại phía sau.<br>Một chút hoa hồng, một chút nắng, một chút mơ màng.</p>
+        <p>Để những bộn bề ở lại phía sau.<br>Một chút hoa tulip, một chút nắng, một chút mơ màng.</p>
         <button class="primary" id="bloom">Đánh thức khu vườn <span>↗</span></button>
         <div class="small-note"><span>✧</span> Chạm vào những bông hoa để gửi một điều ước</div>
       </div>
@@ -33,8 +29,8 @@
         <div class="orbit orbit-one" aria-hidden="true"></div>
         <div class="orbit orbit-two" aria-hidden="true"></div>
         <span class="art-star star-one" aria-hidden="true">✧</span><span class="art-star star-two" aria-hidden="true">✦</span>
-        <div class="art-label"><span>01 / THE ROSE GARDEN</span><i>Trồng một giấc mơ nhỏ.</i></div>
-        <canvas id="flowers" role="img" aria-label="Vườn hoa hồng nhiều lớp cánh đung đưa trong gió"></canvas>
+        <div class="art-label"><span>01 / THE TULIP GARDEN</span><i>Trồng một giấc mơ nhỏ.</i></div>
+        <canvas id="flowers" role="img" aria-label="Vườn hoa tulip cánh cúp đung đưa trong gió"></canvas>
         <button class="wish-point" id="wish" aria-label="Gửi một điều ước">✧</button>
         <div class="floating-note">a little bloom,<br><em>a little magic.</em></div>
         <div class="garden-caption"><span class="live-dot"></span> ĐANG NỞ, CHỈ DÀNH CHO BẠN</div>
@@ -42,45 +38,13 @@
     </section>
     <section class="garden-toolbar" aria-label="Tùy chỉnh khu vườn">
       <div class="quote"><span class="flower-icon">✳</span><p>Không cần một dịp đặc biệt<br><em>để tặng mình một chút dịu dàng.</em></p></div>
-      <div class="palette"><span>SẮC HOA CỦA BẠN</span><div class="swatches" role="group" aria-label="Chọn màu hoa"><button class="swatch red active" data-palette="red" aria-label="Hồng đỏ" aria-pressed="true"></button><button class="swatch peach" data-palette="peach" aria-label="Cam đào" aria-pressed="false"></button><button class="swatch purple" data-palette="purple" aria-label="Tím sương" aria-pressed="false"></button><span id="palette-name">Hồng đỏ</span></div></div>
+      <div class="palette"><span>SẮC HOA CỦA BẠN</span><div class="swatches" role="group" aria-label="Chọn màu hoa"><button class="swatch red active" data-palette="red" aria-label="Tulip đỏ" aria-pressed="true"></button><button class="swatch peach" data-palette="peach" aria-label="Cam đào" aria-pressed="false"></button><button class="swatch purple" data-palette="purple" aria-label="Tím sương" aria-pressed="false"></button><span id="palette-name">Tulip đỏ</span></div></div>
       <div class="breeze"><span>MỘT CHÚT GIÓ</span><button id="wind" aria-pressed="true"><span class="wind-symbol">≋</span><span id="wind-label">Đang nhẹ nhàng thổi</span><span class="wind-dot"></span></button></div>
     </section>
     </div>
-    <section id="void-screen" class="void-screen" aria-labelledby="void-title" hidden>
-      <div class="domain-tunnel" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="void-stars" aria-hidden="true"></div>
-      <div class="void-topline"><span>JUJUTSU / LIMITLESS</span><span>無限 · INFINITY</span></div>
-      <div class="void-layout">
-        <div class="void-copy">
-          <p class="void-eyebrow"><span></span> 五条 悟 / GOJO SATORU</p>
-          <h2 id="void-title">Vô lượng<br><em>không xứ.</em></h2>
-          <p class="void-description">Giữa Lam và Xích, một sức mạnh vượt mọi giới hạn.<br>Bước vào lãnh địa. Chạm đến vô hạn.</p>
-          <button type="button" class="domain-button" id="expand-domain" aria-pressed="false"><span>✧</span> <span id="domain-label">Khai triển lãnh địa</span> <span>↗</span></button>
-          <p class="domain-status" id="domain-status" role="status">Một cử chỉ. Một thế giới vô tận.</p>
-          <div class="void-techniques" aria-label="Sắc năng lượng">
-            <button type="button" data-energy="blue" aria-pressed="true"><i></i> Thuật thức · Lam</button>
-            <button type="button" data-energy="red" aria-pressed="false"><i></i> Nghịch chuyển · Xích</button>
-            <button type="button" data-energy="purple" aria-pressed="false"><i></i> Hư thức · Tử</button>
-          </div>
-        </div>
-        <div class="void-art">
-          <div class="infinity-ring ring-a" aria-hidden="true"></div>
-          <div class="infinity-ring ring-b" aria-hidden="true"></div>
-          <span class="void-kanji" aria-hidden="true">無量<br>空処</span>
-          <div class="energy-orbs" aria-hidden="true"><span class="orb orb-blue"></span><span class="orb orb-red"></span><span class="orb orb-purple"></span></div>
-          <figure class="void-portrait">
-            <img src="assets/original-portrait.png" alt="Chân dung đeo kính, giơ hai ngón tay bên khuôn mặt" width="1284" height="1739" loading="lazy">
-            <figcaption><span>THROUGHOUT HEAVEN AND EARTH</span><span>∞</span></figcaption>
-          </figure>
-          <div class="void-art-note"><span>領域展開</span><small>UNLIMITED VOID</small></div>
-          <span class="void-coordinate">35°41′ N / ∞</span>
-        </div>
-      </div>
-      <div class="void-bottom"><span><i></i> YOU ARE INSIDE THE INFINITY</span><button type="button" id="return-garden">← Trở về vườn hoa</button><span>02 / 02</span></div>
-    </section>
   </main>
   <footer><span>MADE OF PETALS & DAYDREAMS</span><span>Ở đây, mọi điều đều có thể nở hoa. <span class="footer-star">✧</span></span><span>EST. 2026</span></footer>
   <div class="toast" id="toast" role="status"></div>
-  <script src="script.js?v=worlds-2"></script>
-  <script src="screens.js?v=2"></script>
+  <script src="script.js?v=tulips-1"></script>
 </body>
 </html>
